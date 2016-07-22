@@ -77,22 +77,63 @@ var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
 
 // 6. Change 'mouse' to 'keyboard'
 
+console.log("Question 6");
+var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
+things[2]="keyboard";
+console.log(things);
+
 // 7. Combine all of the elements of the array into a string.
 //    (Hint: check out the 'join' method.)
 
+console.log("Question 7");
+var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
+things[2]="keyboard";
+var NewThings= things.join(" ");
+console.log(NewThings);
+
 // 8. Remove the first item.
 
+console.log("Question 8");
+var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
+things[2]="keyboard";
+things.shift();
+console.log(things);
+var NewThings= things.join(" ");
+NewThings.shift();
+console.log(NewThings);
+
 // 9. Remove all items from the things array.
+
+console.log("Question 9");
+var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
+things[2]="keyboard";
+things.shift();
+console.log(things);
+things=[];
+console.log(things);
 
 // Use the following array for question 10:
 var people = ['Bill', 'Ted', 'Emily', 'Andrea', 'Doug'];
 
 // 10. Arrange the items alphabetically. Store this Array as orderedPeople
 
+console.log("Question 10");
+var people = ['Bill', 'Ted', 'Emily', 'Andrea', 'Doug'];
+var orderedPeople= people.sort();
+console.log(orderedPeople);
+
 // 11. Create an array of arrays with the following three arrays:
 var array1 = ["Fido", "Spot", "Rex", "Sparky"]
 var array2 = ["Bulldog", "Lab", "Dalmation", "Beagle"]
 var array3 = ["White", "Black", "Spotted", "Tri-color"]
+
+console.log("Question 11");
+var array1 = ["Fido", "Spot", "Rex", "Sparky"];
+var array2 = ["Bulldog", "Lab", "Dalmation", "Beagle"];
+var array3 = ["White", "Black", "Spotted", "Tri-color"];
+var combo= [array1,array2,array3];
+console.log(combo);
+
 
 // Goal:
 var array4 = [
@@ -103,6 +144,14 @@ var array4 = [
 
 // 12. Remove "Sparky" and "White" from the above array of arrays.
 
+console.log("Question 12");
+var array1 = ["Fido", "Spot", "Rex", "Sparky"];
+var array2 = ["Bulldog", "Lab", "Dalmation", "Beagle"];
+var array3 = ["White", "Black", "Spotted", "Tri-color"];
+var combo= [array1,array2,array3];
+combo[0].splice(3,1);
+combo[2].splice(0,1);
+console.log(combo);
 
 
 // ADVANCED TRACK
