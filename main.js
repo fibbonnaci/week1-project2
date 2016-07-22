@@ -109,7 +109,7 @@ var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
 things[2]="keyboard";
 things.shift();
 console.log(things);
-things=[];
+things.length= 0;
 console.log(things);
 
 // Use the following array for question 10:
@@ -160,18 +160,64 @@ var campingItems = ['tent', 'hiking boots', 'picnic table', 'corn on the cob', '
 
 // 13. Declare an array called lastItem using .pop() on the campingItems array.
 
+console.log("Question 13");
+var campingItems = ['tent', 'hiking boots', 'picnic table', 'corn on the cob', 'cooler'];
+var lastItem=[campingItems.pop()];
+console.log(lastItem);
+
 // 14. Add two new items to lastItem, one at the beginning and one at the end.
+console.log("Question 14");
+var campingItems = ['tent', 'hiking boots', 'picnic table', 'corn on the cob', 'cooler'];
+var lastItem=[campingItems.pop()];
+lastItem.push("sleeping bag");
+lastItem.unshift("headlight");
+console.log(lastItem);
+
 
 // 15. Add s'mores to the lastItem array.
 
+console.log("Question 15");
+var campingItems = ['tent', 'hiking boots', 'picnic table', 'corn on the cob', 'cooler'];
+var lastItem=[campingItems.pop()];
+lastItem.push("sleeping bag");
+lastItem.unshift("headlight");
+lastItem.push("S'mores");
+console.log(lastItem);
+
 // 16. Create a new Array called reversedItems.
 //    The items should be the same as lastItem, only in reverse order.
+
+console.log("Question 16");
+var campingItems = ['tent', 'hiking boots', 'picnic table', 'corn on the cob', 'cooler'];
+var lastItem=[campingItems.pop()];
+lastItem.push("sleeping bag");
+lastItem.unshift("headlight");
+lastItem.push("S'mores");
+console.log(lastItem);
+var reversedItems= lastItem.reverse();
+console.log(reversedItems);
+
 
 // 17. Using the Arrays below, create a single Array
 //     called numberPets whose value is [12, 5, 9, 27, 'fish', 'dog']
 var firstArray = [12, 5, 9, 27];
 var secondArray = ['fish', 'dog'];
 
+console.log("Question 17");
+var firstArray = [12, 5, 9, 27];
+var secondArray = ['fish', 'dog'];
+var numberPets= firstArray.slice();
+console.log(numberPets);
+numberPets.push(secondArray[0], secondArray[1]);
+console.log(numberPets);
+
 // 18: Try to arrange the following items from smallest to largest:
 var sortingNumbers = [2, 5, 98, 55, 77, 300]
 // If it doesn't sort as expected, explain why.
+
+console.log("Question 18");
+var sortingNumbers = [2, 5, 98, 55, 77, 300]
+sortingNumbers.sort(function(a,b){
+  return a-b
+});
+console.log(sortingNumbers);
