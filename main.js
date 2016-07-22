@@ -31,14 +31,46 @@ ADVANCED TRACK: 13-18
 //    Use any method you choose to add at least 4 items to it.
 
 console.log("Question 1");
+var animals = [];
+animals= ["dog", "cat","mouse","rabbit"];
+console.log(animals);
 
 // 2. Add an additional item to the beginning of your array.
+console.log("Question 2");
+var animals = [];
+animals= ["dog", "cat","mouse","rabbit"];
+animals.unshift("panda");
+console.log(animals);
 
 // 3. Remove the second and third items in your array.
 
+console.log("Question 3");
+var animals = [];
+animals= ["dog", "cat","mouse","rabbit"];
+animals.unshift("panda");
+animals.splice(2,2);
+console.log(animals);
+
 // 4. Add two new items after the second item.
 
+console.log("Question 4");
+var animals = [];
+animals= ["dog", "cat","mouse","rabbit"];
+animals.unshift("panda");
+animals.splice(2,2);
+animals.splice(2,0,"Rhino","Elephant");
+console.log(animals);
+
 // 5. Log to the console: 'The current length of the array is....' using the .length method
+
+console.log("Question 5");
+var animals = [];
+animals= ["dog", "cat","mouse","rabbit"];
+animals.unshift("panda");
+animals.splice(2,2);
+animals.splice(2,0,"Rhino","Elephant");
+console.log(animals);
+console.log("The current length of the array is "+ animals.length);
 
 // Use the following Array for questions 6-9:
 var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
